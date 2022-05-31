@@ -1,6 +1,6 @@
 package guru.springframework.sfwdi.controllers;
 
-import guru.springframework.sfwdi.services.GreetingtServiceImpl;
+import guru.springframework.sfwdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class PropertyInjectionControllerTest {
     @BeforeEach
     void setUp() {
         controller = new PropertyInjectionController();
-        controller.greetingService = new GreetingtServiceImpl();
+        controller.greetingService = new ConstructorGreetingService();
     }
 
     @Test

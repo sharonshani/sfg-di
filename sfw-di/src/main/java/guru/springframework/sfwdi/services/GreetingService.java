@@ -1,6 +1,6 @@
 package guru.springframework.sfwdi.services;
 
-public interface GreetingtService  {
+public interface GreetingService {
 
     String sayGreeting();
 }
